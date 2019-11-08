@@ -1,7 +1,8 @@
 What's changed in this Fork:
 ========
 The goal is to use the Servlet in SAP Hybris (Commerce Cloud) with Spring Session enabled.
-Replaced Servlet API to v. 3.1 (instead of 2.4) to allow use `HttpsServletRequest.getServletContext()` instead of `HttpsServletRequest.getSession().getServletContext()`. Since when `/combined.css` is requested Session Filter is not applied so new pure HTTP Session is created.
+Replaced Servlet API to v. 3.1 (instead of 2.4) to allow use of `HttpsServletRequest.getServletContext()` instead of `HttpsServletRequest.getSession().getServletContext()`. 
+The issue is when `/combined.css` is requested Session Filter is not applied so new pure HTTP Session is created, which is not Spring Session.
 
 
 Overview
