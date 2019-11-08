@@ -1,3 +1,9 @@
+What's changed in this Fork:
+========
+The goal is to use the Servlet in SAP Hybris (Commerce Cloud) with Spring Session enabled.
+Replaced Servlet API to v. 3.1 (instead of 2.4) to allow use `HttpsServletRequest.getServletContext()` instead of `HttpsServletRequest.getSession().getServletContext()`. Since when `/combined.css` is requested Session Filter is not applied so new pure HTTP Session is created.
+
+
 Overview
 =======
 Granule is an optimization solution for Java-based web applications (JSP, JSF, Grails). It combines and compresses JavaScript and CSS files into less granulated packages, increasing speed and saving bandwidth.
