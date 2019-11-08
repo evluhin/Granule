@@ -30,7 +30,7 @@ public class RealRequestProxy implements IRequestProxy {
     }
 
     public String getRealPath(String path) {
-        return request.getSession().getServletContext().getRealPath(path);
+        return request.getServletContext().getRealPath(path);
     }
 
     public Object getAttribute(String name) {
